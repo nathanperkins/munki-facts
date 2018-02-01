@@ -29,7 +29,7 @@ def get_repo_url():
 
 def get_json_groups():
     """ returns an array of the groups found in the munki repo at config/groups.json """
-    json_url = get_repo_url() + "/config/groups.json"
+    json_url = get_repo_url() + "/client_resources/groups.json"
 
     cmd = ['curl', json_url]
 
